@@ -299,6 +299,10 @@
     height: 40px;
     margin: 25px auto 0;
   }
+
+  #main-footer .container {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 400px) {
