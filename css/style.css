@@ -214,6 +214,15 @@
   line-height: 3rem;
 }
 
+#about .about-links a {
+  text-decoration: none;
+  color: #232222;
+}
+
+#about .about-links a:hover {
+  text-decoration: underline;
+}
+
 /* Skills */
 
 .skills .progress {
