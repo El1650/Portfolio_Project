@@ -33,27 +33,6 @@
   padding: 1px 0;
 }
 
-/* .mobile-nav-toggle {
-  position: fixed;
-  font-size: 28px;
-  right: 15px;
-  top: 15px;
-  z-index: 9998;
-  border: 0;
-  font-size: 24px;
-  transition: all 0.4s;
-  background-color: #b84fa6;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-  border-radius: 50px;
-  cursor: pointer;
-} */
-
 /* Navbar Section */
 .navbar {
   padding: 0;
@@ -120,7 +99,7 @@
 
 /* Main Section */
 .main {
-  background: url("/img/main.jpg") no-repeat center center/cover;
+  background: url("../img/main.jpg") no-repeat center center/cover;
   height: 100vh;
   width: 100%;
   color: #fff;
@@ -193,6 +172,98 @@
   color: var(--primary-color);
 }
 
+/* About Page */
+#about .about-intro h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+#about .about-intro h4 {
+  opacity: 0.9;
+  margin: 15px 0;
+  color: #7f4d76;
+}
+
+#about .about-intro .about-content p {
+  text-align: justify;
+}
+
+#about .about-subIntro .line {
+  width: 15%;
+  height: 3px;
+  background: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+#about ul {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+#about ul li {
+  list-style: none;
+}
+
+#about ul li i {
+  color: var(--primary-color);
+  line-height: 3rem;
+}
+
+/* Skills */
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #dce8f8;
+  height: 10px;
+}
+
+.skills .progress-bar.one {
+  width: 80%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #149ddd;
+}
+
+.skills .progress-bar.two,
+.skills .progress-bar.five,
+.skills .progress-bar.six {
+  width: 75%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #149ddd;
+}
+
+.skills .progress-bar.three,
+.skills .progress-bar.four {
+  width: 50%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #149ddd;
+}
+
 /* Footer */
 #main-footer .container {
   color: #fff;
@@ -262,7 +333,8 @@
     font-size: 8px;
   }
 
-  .main .main-title {
+  .main .main-title,
+  #about .about-title {
     font-size: 30px;
   }
 
@@ -276,11 +348,14 @@
     font-size: 10px;
   }
 
-  .services .service-intro h1 {
+  .services .service-intro h1,
+  #about .about-intro h1 {
     font-size: 30px;
   }
 
-  .services p {
+  .services p,
+  #about p,
+  .skills p {
     font-size: 12px;
   }
 
@@ -298,6 +373,28 @@
     width: 40px;
     height: 40px;
     margin: 25px auto 0;
+  }
+
+  #about .about-intro h4 {
+    font-size: 15px;
+  }
+
+  #about img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  #about .about-subIntro .about-title {
+    text-align: center;
+  }
+
+  #about .about-subIntro .line {
+    visibility: hidden;
+  }
+
+  #about ul {
+    font-size: 14px;
   }
 
   #main-footer .container {
